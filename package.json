@@ -12,6 +12,7 @@
 	"browserify": "^11.0.1",
 	"eslint": "^1.1.0",
 	"eslint-plugin-react": "^3.2.3",
+	"feature-toggles": "^1.4.0",
 	"uglifyjs": "^2.4.10",
 	"watchify": "^3.3.1"
   },
@@ -22,7 +23,7 @@
   },
   "scripts": {
 	"start": "watchify --extension=.jsx lib/js/index.js -o lib/dist/build.js -v",
-	"lint-js": "eslint lib/js/*",
+	"lint-js": "eslint lib/js/**/*",
 	"build-js": "browserify --extension=.jsx lib/js/index.js | uglifyjs -cm > lib/dist/build.min.js",
 	"build-clean": "rm -rf lib/dist/*"
   }
