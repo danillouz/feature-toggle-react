@@ -18,16 +18,38 @@ var FeatureFour = require('./FeatureFour');
 
 // Component.
 module.exports = React.createClass({
+	propTypes: {
+		userEmail: React.PropTypes.string.isRequired,
+		userPrivilege: React.PropTypes.string.isRequired,
+		targetDate: React.PropTypes.string.isRequired
+	},
+
 	render: function () {
 		return (
 			<section className="app">
-				{ featureToggles.isFeatureEnabled('featureOne') ? <FeatureOne /> : null }
+				{
+					featureToggles.isFeatureEnabled('featureOne') ?
+						<FeatureOne /> :
+						null
+				}
 
-				{ featureToggles.isFeatureEnabled('featureTwo', this.props.userEmail) ? <FeatureTwo /> : null }
+				{
+					featureToggles.isFeatureEnabled('featureTwo', this.props.userEmail) ?
+						<FeatureTwo /> :
+						null
+				}
 
-				{ featureToggles.isFeatureEnabled('featureThree', this.props.userPrivilege) ? <FeatureThree /> : null }
+				{
+					featureToggles.isFeatureEnabled('featureThree', this.props.userPrivilege) ?
+						<FeatureThree /> :
+						null
+				}
 
-				{ featureToggles.isFeatureEnabled('featureFour', this.props.targetDate) ? <FeatureFour /> : null }
+				{
+					featureToggles.isFeatureEnabled('featureFour', this.props.targetDate) ?
+						<FeatureFour /> :
+						null
+				}
 			</section>
 		);
 	}
