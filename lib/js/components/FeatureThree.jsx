@@ -1,8 +1,7 @@
 /**
  * @module FeatureThree
  *
- * Component, regarded as a feature, is toggled by means of a privilege from the feature toggle
- * configuration file.
+ * Component, regarded as a feature, is toggled by means of a privilege.
  *
  * When a specific privilege is found in a 'symbol list', the feature will be toggled for a specific
  * user asociated with said privilege.

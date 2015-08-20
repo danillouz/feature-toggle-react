@@ -1,8 +1,7 @@
 /**
  * @module FeatureTwo
  *
- * Component, regarded as a feature, is toggled by means of an email address from the feature toggle
- * configuration file.
+ * Component, regarded as a feature, is toggled by means of an email address.
  *
  * When a specific email is found in a 'symbol list', the feature will be toggled for a specific
  * user asociated with said email address.

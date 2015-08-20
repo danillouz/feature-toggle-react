@@ -1,9 +1,8 @@
 /**
  * @module FeatureFour
  *
- * Component, regarded as a feature, is toggled by means of a target date from the feature toggle
- * configuration file.
- *
+ * Component, regarded as a feature, is toggled by means of a target date.
+ * 
  * When the target date is met, the feature will be toggled for all users.
  *
  * This allows all users to access certain features from a specific date set in the future.
