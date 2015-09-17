@@ -1,5 +1,6 @@
 # feature-toggle-react
-Proof of concept illustrating the usage of feature toggles in a front-end react.js project.
+Proof of concept illustrating the usage of feature toggles in a front-end react.js project for
+the knowledge sharing presentation at [crowdynews](http://www.crowdynews.com/).
 
 Feature toggles will facilitate an interface that exposes a system to integrate features in a
 codebase using CommonJS modules, before they're finished and ready to be release.
@@ -31,3 +32,8 @@ file.
 # additional-resources
 - [FeatureToggle by Martin Fowler](http://martinfowler.com/bliki/FeatureToggle.html)
 - [Decoupling Deployment and Release- Feature Toggles by Abhishek Tiwari](http://abhishek-tiwari.com/post/decoupling-deployment-and-release-feature-toggles)
+
+# running the application
+```
+npm start
+```

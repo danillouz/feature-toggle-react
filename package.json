@@ -1,7 +1,7 @@
 {
   "name": "feature-toggle-react",
   "description": "Proof of concept.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Daniel Illouz",
   "private": true,
   "dependencies": {
@@ -23,8 +23,8 @@
   },
   "scripts": {
 	"start": "watchify --extension=.jsx lib/js/index.js -o lib/dist/build.js -v",
-	"lint-js": "eslint lib/js/**/*",
-	"build-js": "browserify --extension=.jsx lib/js/index.js | uglifyjs -cm > lib/dist/build.min.js",
-	"build-clean": "rm -rf lib/dist/*"
+	"lint:js": "eslint lib/js/**/*",
+	"build:js": "browserify --extension=.jsx lib/js/index.js | uglifyjs -cm > lib/dist/build.min.js",
+	"build:clean": "rm -rf lib/dist/*"
   }
 }
