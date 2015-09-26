@@ -1,6 +1,6 @@
 # feature-toggle-react
 Proof of Concept illustrating the usage of feature toggles in a front-end
-react.js project for the knowledge sharing presentation at [crowdynews](http://www.crowdynews.com/).
+react.js project for the knowledge sharing [presentation](http://slides.com/danillouz/feature-toggles#/) at [crowdynews](http://www.crowdynews.com/).
 
 Feature toggles can facilitate an interface that exposes a system to
 integrate features in a codebase using CommonJS modules, before they're
